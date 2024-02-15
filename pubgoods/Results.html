@@ -1,0 +1,12 @@
+{{ block title }}
+    Page title
+{{ endblock }}
+
+{{ block content }}
+    You contributed {{player.contribution}}.
+    In this round you earned {{player.participant.payoff}}.
+    Your total earnings so far: {{player.participant.vars.totalEarnings}}.
+    {{ next_button }}
+{{ endblock }}
+
+
