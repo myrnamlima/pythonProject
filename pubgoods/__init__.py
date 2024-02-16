@@ -20,7 +20,9 @@ class Subsession(BaseSubsession):
 
 
 class Group(BaseGroup):
-    MPCR = models.FloatField(initial=.6)   # Declaring a variable on oTree (floating type); depending on the period will take the value of MPCR_1 or MPCR_2
+    MPCR = models.FloatField(initial=.6)   # Declaring a variable on oTree (floating type); depending on the period
+    # will take the value of MPCR_1 or MPCR_2
+    # I kept the 0.6 but the MPCR is changing in the after 2 rounds, so I'm not sure what to enter in the ()
 
 
 class Player(BasePlayer):
